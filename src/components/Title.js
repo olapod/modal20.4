@@ -1,3 +1,5 @@
+import App from '../../containers/App.js';
+
 class Title extends React.Component {
     render() {
         return <div className={'title'}>
@@ -6,4 +8,6 @@ class Title extends React.Component {
         </div>   
       }
     }
+
+export default Title;
 
