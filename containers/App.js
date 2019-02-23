@@ -26,6 +26,7 @@ class App extends React.Component {
         return (
             <div className={style.TodoApp}>
                 <Title title={title}></Title>
+                <p>DUPA</p>
             </div>
         );
     }
