@@ -81,42 +81,19 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./containers/App.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/containers/App.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./App.css":
-/*!*****************!*\
-  !*** ./App.css ***!
-  \*****************/
+/***/ "./node_modules/css-loader/dist/cjs.js?!./src/containers/App.css":
+/*!********************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/containers/App.css ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("\nvar content = __webpack_require__(/*! !./node_modules/css-loader/dist/cjs.js??ref--5-1!./App.css */ \"./node_modules/css-loader/dist/cjs.js?!./App.css\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ./node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./App.css?");
-
-/***/ }),
-
-/***/ "./containers/App.js":
-/*!***************************!*\
-  !*** ./containers/App.js ***!
-  \***************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _react = _interopRequireDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\n\nvar _uuid = _interopRequireDefault(__webpack_require__(/*! uuid */ \"./node_modules/uuid/index.js\"));\n\nvar _App = _interopRequireDefault(__webpack_require__(/*! ../App.css */ \"./App.css\"));\n\nvar _Title = _interopRequireDefault(__webpack_require__(/*! ../src/components/Title */ \"./src/components/Title.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _typeof(obj) { if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }\n\nfunction _nonIterableSpread() { throw new TypeError(\"Invalid attempt to spread non-iterable instance\"); }\n\nfunction _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === \"[object Arguments]\") return Array.from(iter); }\n\nfunction _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nvar App =\n/*#__PURE__*/\nfunction (_React$Component) {\n  _inherits(App, _React$Component);\n\n  function App(props) {\n    var _this;\n\n    _classCallCheck(this, App);\n\n    _this = _possibleConstructorReturn(this, _getPrototypeOf(App).call(this, props));\n    _this.state = {\n      data: []\n    };\n    return _this;\n  }\n\n  _createClass(App, [{\n    key: \"addTodo\",\n    value: function addTodo(val) {\n      var todo = {\n        text: val,\n        id: _uuid.default.v4()\n      };\n      var data = [].concat(_toConsumableArray(this.state.data), [todo]);\n      this.setState({\n        data: data\n      });\n    }\n  }, {\n    key: \"removeTodo\",\n    value: function removeTodo(id) {\n      var remainder = this.state.data.filter(function (todo) {\n        return todo.id !== id;\n      });\n      this.setState({\n        data: remainder\n      });\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      return _react.default.createElement(\"div\", {\n        className: _App.default.TodoApp\n      }, _react.default.createElement(_Title.default, null));\n    }\n  }]);\n\n  return App;\n}(_react.default.Component);\n\nvar _default = App;\nexports.default = _default;\n\n//# sourceURL=webpack:///./containers/App.js?");
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js?!./App.css":
-/*!*****************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./App.css ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("exports = module.exports = __webpack_require__(/*! ./node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"._3o4Tka9KRN2LIZXZapFHN7 {\\r\\n    background-color: #F5F5F5;\\r\\n    color: #222;\\r\\n    display: flex;\\r\\n    flex-direction: column;\\r\\n    flex-wrap: nowrap;\\r\\n    justify-content: center;\\r\\n    align-items: center;\\r\\n    align-content: center;\\r\\n    width: 100vw;\\r\\n    height: 100vh;\\r\\n}\", \"\"]);\n\n// Exports\nexports.locals = {\n\t\"TodoApp\": \"_3o4Tka9KRN2LIZXZapFHN7\"\n};\n\n//# sourceURL=webpack:///./App.css?./node_modules/css-loader/dist/cjs.js??ref--5-1");
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"._2xo2biYT1s9XQmHhT2Utv5 {\\r\\n    background-color: #F5F5F5;\\r\\n    color: #222;\\r\\n    display: flex;\\r\\n    flex-direction: column;\\r\\n    flex-wrap: nowrap;\\r\\n    justify-content: center;\\r\\n    align-items: center;\\r\\n    align-content: center;\\r\\n    width: 100vw;\\r\\n    height: 100vh;\\r\\n}\", \"\"]);\n\n// Exports\nexports.locals = {\n\t\"TodoApp\": \"_2xo2biYT1s9XQmHhT2Utv5\"\n};\n\n//# sourceURL=webpack:///./src/containers/App.css?./node_modules/css-loader/dist/cjs.js??ref--5-1");
 
 /***/ }),
 
@@ -277,7 +254,30 @@ eval("var rng = __webpack_require__(/*! ./lib/rng */ \"./node_modules/uuid/lib/r
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _react = _interopRequireDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\n\nvar _App = _interopRequireDefault(__webpack_require__(/*! ../../containers/App */ \"./containers/App.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n// class Title extends React.Component {\n//     render() {\n//         return <div className={'title'}>\n//           <h1>ToDoList</h1>\n//           <p>Number of Task: {App.data.length}</p>\n//         </div>   \n//       }\n//     }\nvar Title = function Title(props) {\n  return _react.default.createElement(\"div\", null, _react.default.createElement(\"h1\", null, \"TO DO LIST\"), _react.default.createElement(\"p\", null, \"Number of Task: \", _App.default.data.length));\n};\n\nvar _default = Title;\nexports.default = _default;\n\n//# sourceURL=webpack:///./src/components/Title.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _react = _interopRequireDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Title = function Title(props) {\n  return _react.default.createElement(\"div\", null, _react.default.createElement(\"h1\", null, props.title), _react.default.createElement(\"p\", null, \"Lista: \", props.length));\n};\n\nvar _default = Title;\nexports.default = _default;\n\n//# sourceURL=webpack:///./src/components/Title.js?");
+
+/***/ }),
+
+/***/ "./src/containers/App.css":
+/*!********************************!*\
+  !*** ./src/containers/App.css ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-1!./App.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/containers/App.css\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/containers/App.css?");
+
+/***/ }),
+
+/***/ "./src/containers/App.js":
+/*!*******************************!*\
+  !*** ./src/containers/App.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _react = _interopRequireDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\n\nvar _uuid = _interopRequireDefault(__webpack_require__(/*! uuid */ \"./node_modules/uuid/index.js\"));\n\nvar _App = _interopRequireDefault(__webpack_require__(/*! ./App.css */ \"./src/containers/App.css\"));\n\nvar _Title = _interopRequireDefault(__webpack_require__(/*! ../components/Title */ \"./src/components/Title.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _typeof(obj) { if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }\n\nfunction _nonIterableSpread() { throw new TypeError(\"Invalid attempt to spread non-iterable instance\"); }\n\nfunction _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === \"[object Arguments]\") return Array.from(iter); }\n\nfunction _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nvar App =\n/*#__PURE__*/\nfunction (_React$Component) {\n  _inherits(App, _React$Component);\n\n  function App(props) {\n    var _this;\n\n    _classCallCheck(this, App);\n\n    _this = _possibleConstructorReturn(this, _getPrototypeOf(App).call(this, props));\n    _this.state = {\n      data: []\n    };\n    return _this;\n  }\n\n  _createClass(App, [{\n    key: \"addTodo\",\n    value: function addTodo(val) {\n      var todo = {\n        text: val,\n        id: _uuid.default.v4()\n      };\n      var data = [].concat(_toConsumableArray(this.state.data), [todo]);\n      this.setState({\n        data: data\n      });\n    }\n  }, {\n    key: \"removeTodo\",\n    value: function removeTodo(id) {\n      var remainder = this.state.data.filter(function (todo) {\n        return todo.id !== id;\n      });\n      this.setState({\n        data: remainder\n      });\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      return _react.default.createElement(\"div\", {\n        className: _App.default.TodoApp\n      }, _react.default.createElement(_Title.default, {\n        title: \"ToDoList App\",\n        length: this.state.data.length\n      }));\n    }\n  }]);\n\n  return App;\n}(_react.default.Component);\n\nvar _default = App;\nexports.default = _default;\n\n//# sourceURL=webpack:///./src/containers/App.js?");
 
 /***/ })
 

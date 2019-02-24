@@ -5,7 +5,7 @@ module.exports = (env) => {
     
     return {
             mode: environment,
-            entry: './containers/App.js',
+            entry: './src/containers/App.js',
             output: {
                 path: path.resolve(__dirname, 'build'),
                 filename: 'app.' + environment + '.bundle.js'
