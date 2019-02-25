@@ -254,7 +254,7 @@ eval("var rng = __webpack_require__(/*! ./lib/rng */ \"./node_modules/uuid/lib/r
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _react = _interopRequireDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Title = function Title(props) {\n  return _react.default.createElement(\"div\", null, _react.default.createElement(\"h1\", null, props.title), _react.default.createElement(\"p\", null, \"Lista: \", props.length));\n};\n\nvar _default = Title;\nexports.default = _default;\n\n//# sourceURL=webpack:///./src/components/Title.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _react = _interopRequireDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Title = function Title(props) {\n  return _react.default.createElement(\"div\", null, _react.default.createElement(\"h1\", null, props.title), _react.default.createElement(\"p\", null, \"Number of Tasks: \", props.length));\n};\n\nvar _default = Title;\nexports.default = _default;\n\n//# sourceURL=webpack:///./src/components/Title.js?");
 
 /***/ }),
 
