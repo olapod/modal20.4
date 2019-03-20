@@ -1,0 +1,9 @@
+.AppTitle {
+    text-decoration: underline wavy rgb(48, 48, 138);
+    
+}
+
+.NoTasks {
+    color: rgb(30, 88, 53);
+    font-weight: bold;
+}

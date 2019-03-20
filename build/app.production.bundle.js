@@ -86,6 +86,28 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./node_modules/css-loader/dist/cjs.js?!./src/components/Title.css":
+/*!**********************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/components/Title.css ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".fJRWfY8fJnM3teRuodjYn {\\r\\n    text-decoration: underline wavy rgb(48, 48, 138);\\r\\n    \\r\\n}\\r\\n\\r\\n._1oBrwK7m0Hw_4JX5LFy1fi {\\r\\n    color: rgb(30, 88, 53);\\r\\n    font-weight: bold;\\r\\n}\", \"\"]);\n\n// Exports\nexports.locals = {\n\t\"AppTitle\": \"fJRWfY8fJnM3teRuodjYn\",\n\t\"NoTasks\": \"_1oBrwK7m0Hw_4JX5LFy1fi\"\n};\n\n//# sourceURL=webpack:///./src/components/Title.css?./node_modules/css-loader/dist/cjs.js??ref--5-1");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./src/components/Todolist.css":
+/*!*************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/components/Todolist.css ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"._3CesdkbCbjnTccJz_bNXwj {\\r\\n    font-size: 18px;\\r\\n  line-height: 2;\\r\\n}\\r\\n\\r\\n._3CesdkbCbjnTccJz_bNXwj:hover {\\r\\n    cursor: pointer;\\r\\n    text-decoration: underline;\\r\\n    color: rgb(48, 48, 138);\\r\\n}\\r\\n\\r\\n\", \"\"]);\n\n// Exports\nexports.locals = {\n\t\"Todolist\": \"_3CesdkbCbjnTccJz_bNXwj\"\n};\n\n//# sourceURL=webpack:///./src/components/Todolist.css?./node_modules/css-loader/dist/cjs.js??ref--5-1");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js?!./src/containers/App.css":
 /*!********************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/containers/App.css ***!
@@ -93,7 +115,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"._2xo2biYT1s9XQmHhT2Utv5 {\\r\\n    background-color: #F5F5F5;\\r\\n    color: #222;\\r\\n    display: flex;\\r\\n    flex-direction: column;\\r\\n    flex-wrap: nowrap;\\r\\n    justify-content: center;\\r\\n    align-items: center;\\r\\n    align-content: center;\\r\\n    width: 100vw;\\r\\n    height: 100vh;\\r\\n}\", \"\"]);\n\n// Exports\nexports.locals = {\n\t\"TodoApp\": \"_2xo2biYT1s9XQmHhT2Utv5\"\n};\n\n//# sourceURL=webpack:///./src/containers/App.css?./node_modules/css-loader/dist/cjs.js??ref--5-1");
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"._2xo2biYT1s9XQmHhT2Utv5 {\\r\\n    background-color: rgb(185, 70, 70);\\r\\n    display: flex;\\r\\n    flex-direction: column;\\r\\n    flex-wrap: nowrap;\\r\\n    justify-content: center;\\r\\n    align-items: center;\\r\\n    align-content: center;\\r\\n    width: 100vw;\\r\\n    height: 100vh;\\r\\n    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;\\r\\n    font-size: bold;\\r\\n    color: whitesmoke;\\r\\n}\\r\\n\\r\\n\", \"\"]);\n\n// Exports\nexports.locals = {\n\t\"TodoApp\": \"_2xo2biYT1s9XQmHhT2Utv5\"\n};\n\n//# sourceURL=webpack:///./src/containers/App.css?./node_modules/css-loader/dist/cjs.js??ref--5-1");
 
 /***/ }),
 
@@ -329,6 +351,17 @@ eval("var g; // This works in non-strict mode\n\ng = function () {\n  return thi
 
 /***/ }),
 
+/***/ "./src/components/Title.css":
+/*!**********************************!*\
+  !*** ./src/components/Title.css ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-1!./Title.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/components/Title.css\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/components/Title.css?");
+
+/***/ }),
+
 /***/ "./src/components/Title.js":
 /*!*********************************!*\
   !*** ./src/components/Title.js ***!
@@ -337,7 +370,18 @@ eval("var g; // This works in non-strict mode\n\ng = function () {\n  return thi
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _react = _interopRequireDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Title = function Title(props) {\n  return _react.default.createElement(\"div\", null, _react.default.createElement(\"h1\", null, props.title), _react.default.createElement(\"p\", null, \"Number of Tasks: \", props.length));\n};\n\nvar _default = Title;\nexports.default = _default;\n\n//# sourceURL=webpack:///./src/components/Title.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _react = _interopRequireDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\n\nvar _Title = _interopRequireDefault(__webpack_require__(/*! ./Title.css */ \"./src/components/Title.css\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Title = function Title(props) {\n  return _react.default.createElement(\"div\", null, _react.default.createElement(\"h1\", {\n    className: _Title.default.AppTitle\n  }, props.title), _react.default.createElement(\"p\", {\n    className: _Title.default.NoTasks\n  }, \"Number of Tasks: \", props.length));\n};\n\nvar _default = Title;\nexports.default = _default;\n\n//# sourceURL=webpack:///./src/components/Title.js?");
+
+/***/ }),
+
+/***/ "./src/components/Todolist.css":
+/*!*************************************!*\
+  !*** ./src/components/Todolist.css ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-1!./Todolist.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/components/Todolist.css\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/components/Todolist.css?");
 
 /***/ }),
 
@@ -349,7 +393,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _react = _interopRequireDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar TodoList = function TodoList(props) {\n  return props.items.map(function (item) {\n    return _react.default.createElement(\"li\", {\n      key: item.id,\n      onClick: function onClick() {\n        return props.remove(item.id);\n      }\n    }, item.id, \" \", item.text);\n  });\n};\n\nvar _default = TodoList;\nexports.default = _default;\n\n//# sourceURL=webpack:///./src/components/Todolist.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _react = _interopRequireDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\n\nvar _Todolist = _interopRequireDefault(__webpack_require__(/*! ./Todolist.css */ \"./src/components/Todolist.css\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar TodoList = function TodoList(props) {\n  return props.items.map(function (item) {\n    return _react.default.createElement(\"li\", {\n      className: _Todolist.default.Todolist,\n      key: item.id,\n      onClick: function onClick() {\n        return props.remove(item.id);\n      }\n    }, item.text);\n  });\n};\n\nvar _default = TodoList;\nexports.default = _default;\n\n//# sourceURL=webpack:///./src/components/Todolist.js?");
 
 /***/ }),
 
