@@ -1,0 +1,9 @@
+.AppTitle {
+    padding: 10px;
+    background-color: rgb(66, 66, 87);
+}
+
+.NoTasks {
+    color: rgb(66, 66, 87);
+    font-weight: bold;
+}
