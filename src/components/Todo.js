@@ -1,13 +1,20 @@
-// import React from 'react';
-// import style from './Todolist.css';
+import React from 'react';
 
-// const Todo = props => {
-//     return(
-        
-//             <li key={props.id} className={style.Todolist} onClick = {()=>props.remove(props.id)}>{props.text}</li>
-        
-//     )
-// };
-   
-// export default Todo;
+class Todo extends React.Component {
+    constructor(props){
+        super(props);
+    }       
+
+    render () {
+        return(
+            <li onClick={this.remove.bind(this)}>{props.text}</li>
+        )
+    };
+
+    remove () {
+        this.props.remove(this.props.id);
+    }
+}
+
+export default Todo;
 

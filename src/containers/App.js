@@ -5,7 +5,6 @@ import style from './App.css';
 import Title from '../components/Title';
 import TodoList from '../components/Todolist';
 import TodoForm from '../components/Todoform';
-// import Todo from '../components/Todo';
 
 
 class App extends React.Component {
@@ -46,7 +45,7 @@ class App extends React.Component {
             <div className={style.TodoApp}>
                 <Title title="ToDoList App" length={this.state.data.length}/>
                 <TodoForm handleSubmit={this.addTodo.bind(this)}/>
-                <ul>
+                <ul className={style.Todolist}>
                     <TodoList items={this.state.data} remove={this.removeTodo.bind(this)}/>    
                 </ul>
             </div>
