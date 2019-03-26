@@ -45,9 +45,9 @@ class App extends React.Component {
             <div className={style.TodoApp}>
                 <Title title="ToDoList App" length={this.state.data.length}/>
                 <TodoForm handleSubmit={this.addTodo.bind(this)}/>
-                <ul className={style.Todolist}>
-                    <TodoList items={this.state.data} remove={this.removeTodo.bind(this)}/>    
-                </ul>
+                
+                    <TodoList className={style.Todolist} items={this.state.data} remove={this.removeTodo.bind(this)}/>    
+                
             </div>
         );
     }
