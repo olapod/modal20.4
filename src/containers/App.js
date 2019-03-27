@@ -29,10 +29,8 @@ class App extends React.Component {
             text: val,
             id: uuid.v4(),
         };
-        
         const data = [...this.state.data, todo];
-        
-        this.setState({data});
+        this.setState({data})
     }
 
     removeTodo(id) {
@@ -45,9 +43,9 @@ class App extends React.Component {
             <div className={style.TodoApp}>
                 <Title title="ToDoList App" length={this.state.data.length}/>
                 <TodoForm handleSubmit={this.addTodo.bind(this)}/>
-                
+                <ul>
                     <TodoList className={style.Todolist} items={this.state.data} remove={this.removeTodo.bind(this)}/>    
-                
+                </ul>
             </div>
         );
     }
